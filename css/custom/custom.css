@@ -4,6 +4,16 @@
 	Author: NicoDev
 ================================================================================*/
 
+.btn {
+	background-color: #8bc34a;
+}
+
+
+
+ul.side-nav.leftside-navigation li.active > a {
+	color: #8bc34a;
+}
+
 .mss-logo{
 height: 33px !important;
 }
