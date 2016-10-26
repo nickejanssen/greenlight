@@ -32,6 +32,8 @@
     <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!--dropify-->
+    <link href="js/plugins/dropify/css/dropify.min.css" type="text/css" rel="stylesheet" media="screen,projection">   
 
 
 </head>
@@ -160,98 +162,70 @@
             </aside>
             <!-- END LEFT SIDEBAR NAV-->
 
-            <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- START CONTENT -->
+      <section id="content">
 
-            <!-- START CONTENT -->
-            <section id="content">
-                <!--START CONTAINER-->
-                <div class="container">
-                    <!--cards start-->
-                    <div id="card-widgets">
-                        <div class="row">
-                            <div class="col s12 m12">
-                                <ul id="task-card" class="collection with-header rbi-mss-login_widget card">
-                                    <li class="collection-header mlb-blue-bg">
-                                        <h4 class="task-card-title">Active Companies</h4>
-                                    </li>
-                                    <li>
-                                        <div class="card-content">
-                                        <table class="striped">
-                                            <thead>
-                                            <tr>
-                                                <th data-field="id">Name</th>
-                                                <th data-field="active">Active</th>
-                                                <th data-field="waiting">Waiting</th>
-                                                <th data-field="expired">Expired</th>
-                                            </tr>
-                                            </thead>
-
-                                            <tbody>
-                                            <tr>
-                                                <td>Endurance Race Services</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Endurance Race Services</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Endurance Race Services</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                        </div>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                            
-                            <!-- Archived Companies Card -->
-                            <div class="col s12 m12 l4">
-                            </div>
-
-                        <div class="col s12 m12 l4">
-                        </div>
-
-
-                        <div class="col s12 m12 l4">
-                        </div>
-
-                    </div>
-                    <!--cards end-->
-
-                </div>
-                <!--end container-->
-            </section>
-            <!-- END CONTENT -->
-            <!-- LEFT RIGHT SIDEBAR NAV-->
-
+        <!--breadcrumbs start-->
+        <div id="breadcrumbs-wrapper">
+            <!-- Search for small screen -->
+            <div class="header-search-wrapper grey hide-on-large-only">
+                <i class="mdi-action-search active"></i>
+                <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+            </div>
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h5 class="breadcrumbs-title">Upload Certificate</h5>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- END WRAPPER -->
+        <!--breadcrumbs end-->
+
+
+        <!--start container-->
+        <div class="container">
+          <div class="divider"></div>
+          <!--file-upload-->
+          <div id="file-upload" class="section">
+
+            <!--Max file size-->
+            <div class="row section">
+              <div class="col s12 m12 l12">
+                  <p>Maximum file upload size 2MB.</p>
+                  <input type="file" id="input-file-max-fs" class="dropify-event" data-max-file-size="2M" data-default-file="" data-height="" data-disable-remove="true" />
+              </div>
+            </div>            
+          </div>
+        </div>
+        <!--end container-->
+
+      </section>
+      <!-- END CONTENT -->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
 
     </div>
-    <!-- END MAIN -->
+    <!-- END WRAPPER -->
+
+  </div>
+  <!-- END MAIN -->
 
 
 
-    <!-- //////////////////////////////////////////////////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
 
-    <!-- START FOOTER
-    <footer class="page-footer"> 
-        <div class="footer-copyright">
-            <div class="container">
-                Copyright © 2016 <a class="grey-text text-lighten-4" href="" target="_blank">GreenLight</a> All rights reserved.
-            </div>
+  <!-- START FOOTER
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        <span>Copyright © 2015 <a class="grey-text text-lighten-4" href="" target="_blank">GreenLight</a> All rights reserved.</span>
         </div>
-    </footer>
-     END FOOTER -->
+    </div>
+  </footer>
+ END FOOTER -->
+
 
 
     <!-- ================================================
@@ -260,27 +234,51 @@
     
     <!-- jQuery Library -->
     <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>    
+    <!--angularjs-->
+    <script type="text/javascript" src="js/plugins/angular.min.js"></script>
     <!--materialize js-->
     <script type="text/javascript" src="js/materialize.js"></script>
+    <!--prism -->
+    <script type="text/javascript" src="js/plugins/prism/prism.js"></script>
     <!--scrollbar-->
     <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    
-
     <!-- chartist -->
     <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
-
-    <!-- chartjs -->
-    <script type="text/javascript" src="js/plugins/chartjs/chart.min.js"></script>
-    <script type="text/javascript" src="js/plugins/chartjs/chart-script.js"></script>
-
-    <!-- sparkline -->
-    <script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
-    <script type="text/javascript" src="js/plugins/sparkline/sparkline-script.js"></script>
-    
-
+    <!-- dropify -->
+    <script type="text/javascript" src="js/plugins/dropify/js/dropify.min.js"></script>
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="js/plugins.js"></script>
     <!--custom-script.js - Add your own theme custom JS-->
     <script type="text/javascript" src="js/custom-script.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Basic
+            $('.dropify').dropify();
+
+            // Translated
+            $('.dropify-fr').dropify({
+                messages: {
+                    default: 'Glissez-déposez un fichier ici ou cliquez',
+                    replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                    remove:  'Supprimer',
+                    error:   'Désolé, le fichier trop volumineux'
+                }
+            });
+
+            // Used events
+            var drEvent = $('.dropify-event').dropify();
+
+            drEvent.on('dropify.beforeClear', function(event, element){
+                return confirm("Do you really want to delete \"" + element.filename + "\" ?");
+            });
+
+            drEvent.on('dropify.afterClear', function(event, element){
+                alert('File deleted');
+            });
+        });
+    </script>
+    
 </body>
+
 </html>
