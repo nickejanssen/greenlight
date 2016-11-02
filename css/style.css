@@ -193,6 +193,7 @@ li.home:before {
 
 .margin {
   margin: 0 !important;
+  margin-bottom: 0px;
 }
 
 /*----------------------------------------
@@ -1189,6 +1190,10 @@ tr.group:hover {
 .login-text {
   margin-top: -6px;
   margin-left: -6px !important;
+}
+
+.register-form {
+  
 }
 
 /*----------------------------------------
