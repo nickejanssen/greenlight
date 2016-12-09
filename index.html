@@ -30,8 +30,6 @@
 
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
     <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 
 </head>
@@ -126,7 +124,7 @@
                             <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                            <li><a href="user-login.html"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
                             </li>
                         </ul>
                         <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">John Doe<i class="mdi-navigation-arrow-drop-down right"></i></a>
@@ -210,7 +208,43 @@
                             </div>
                             
                             <!-- Archived Companies Card -->
-                            <div class="col s12 m12 l4">
+                            <div class="col s12 m12 l12">
+                                <ul id="task-card" class="collection with-header rbi-mss-login_widget card">
+                                    <li class="collection-header mlb-blue-bg">
+                                        <h4 class="task-card-title">Archived Companies</h4>
+                                    </li>
+                                    <li>
+                                        <div class="card-content">
+                                        <table class="striped">
+                                            <thead>
+                                            <tr>
+                                                <th data-field="id">Name</th>
+                                                <th data-field="active">Active</th>
+                                                <th data-field="waiting">Waiting</th>
+                                                <th data-field="expired">Expired</th>
+                                            </tr>
+                                            </thead>
+
+                                            <tbody>
+                                            <tr>
+                                                <td>Company 1</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company 2</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
                             </div>
 
                         <div class="col s12 m12 l4">
@@ -260,23 +294,7 @@
     <script type="text/javascript" src="js/materialize.js"></script>
     <!--scrollbar-->
     <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    
-
-    <!-- chartist -->
-    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
-
-    <!-- chartjs -->
-    <script type="text/javascript" src="js/plugins/chartjs/chart.min.js"></script>
-    <script type="text/javascript" src="js/plugins/chartjs/chart-script.js"></script>
-
-    <!-- sparkline -->
-    <script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
-    <script type="text/javascript" src="js/plugins/sparkline/sparkline-script.js"></script>
-    
-
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="js/plugins.js"></script>
-    <!--custom-script.js - Add your own theme custom JS-->
-    <script type="text/javascript" src="js/custom-script.js"></script>
 </body>
 </html>
