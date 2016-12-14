@@ -18,36 +18,70 @@
     <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
     <!-- For Windows Phone -->
 
+  <!-- CORE CSS-->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <!-- Custome CSS-->
+  <link href="css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
 
-    <!-- CORE CSS-->    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <!-- Custome CSS-->    
-    <link href="css/custom/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
-
-
-    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
-    <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <!--dropify-->
-    <link href="js/plugins/dropify/css/dropify.min.css" type="text/css" rel="stylesheet" media="screen,projection">   
-
-
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <style type="text/css">
+  .input-field div.error{
+    position: relative;
+    top: -1rem;
+    left: 0rem;
+    font-size: 0.8rem;
+    color:#FF4081;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .input-field label.active{
+      width:100%;
+  }
+  .left-alert input[type=text] + label:after,
+  .left-alert input[type=password] + label:after,
+  .left-alert input[type=email] + label:after,
+  .left-alert input[type=url] + label:after,
+  .left-alert input[type=time] + label:after,
+  .left-alert input[type=date] + label:after,
+  .left-alert input[type=datetime-local] + label:after,
+  .left-alert input[type=tel] + label:after,
+  .left-alert input[type=number] + label:after,
+  .left-alert input[type=search] + label:after,
+  .left-alert textarea.materialize-textarea + label:after{
+      left:0px;
+  }
+  .right-alert input[type=text] + label:after,
+  .right-alert input[type=password] + label:after,
+  .right-alert input[type=email] + label:after,
+  .right-alert input[type=url] + label:after,
+  .right-alert input[type=time] + label:after,
+  .right-alert input[type=date] + label:after,
+  .right-alert input[type=datetime-local] + label:after,
+  .right-alert input[type=tel] + label:after,
+  .right-alert input[type=number] + label:after,
+  .right-alert input[type=search] + label:after,
+  .right-alert textarea.materialize-textarea + label:after{
+      right:70px;
+  }
+  </style>
 </head>
 
 <body>
-    <!-- Start Page Loading -->
-    <div id="loader-wrapper">
-        <div id="loader"></div>        
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
-    <!-- End Page Loading -->
+  <!-- Start Page Loading -->
+  <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
+  <!-- End Page Loading -->
 
-    <!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
 
     <!-- START HEADER -->
     <header id="header" class="page-topbar">
@@ -55,25 +89,25 @@
         <div class="navbar-fixed">
             <nav class="navbar-color">
                 <div class="nav-wrapper">
-                    <ul class="left">                      
+                    <ul class="left">
                       <li><h1 class="logo-wrapper">
                       <a href="index.html" class="brand-logo darken-1">
                           <img src="" alt="GreenLight logo">
-                      </a> 
+                      </a>
                       <span class="logo-text">GreenLight</span></h1></li>
                     </ul>
-                    
+
                     <div class="header-search-wrapper hide-on-med-and-down">
                         <i class="mdi-action-search"></i>
                         <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Search"/>
                     </div>
-                    
+
                     <ul class="right hide-on-med-and-down">
                         <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-social-notifications"><small class="notification-badge">5</small></i>
                         </a>
                         </li>
                     </ul>
-                    
+
                     <!-- notifications-dropdown -->
                     <ul id="notifications-dropdown" class="dropdown-content">
                       <li>
@@ -83,22 +117,6 @@
                       <li>
                         <a href="#!"><i class="mdi-action-add-shopping-cart"></i> A new order has been placed!</a>
                         <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">2 hours ago</time>
-                      </li>
-                      <li>
-                        <a href="#!"><i class="mdi-action-stars"></i> Completed the task</a>
-                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
-                      </li>
-                      <li>
-                        <a href="#!"><i class="mdi-action-settings"></i> Settings updated</a>
-                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">4 days ago</time>
-                      </li>
-                      <li>
-                        <a href="#!"><i class="mdi-editor-insert-invitation"></i> Director meeting started</a>
-                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">6 days ago</time>
-                      </li>
-                      <li>
-                        <a href="#!"><i class="mdi-action-trending-up"></i> Generate monthly report</a>
-                        <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">1 week ago</time>
                       </li>
                     </ul>
                 </div>
@@ -155,28 +173,30 @@
                 <li><a href="contact.html" class="waves-effect waves-green"><i class="mdi-communication-live-help"></i>Help</a>
                 </li>
                 <li><a href="contact.html" class="waves-effect waves-green"><i class="mdi-communication-chat"></i>Contact</a>
-                </li>                   
+                </li>
                 <li class="li-hover"><div class="divider"></div></li>
             </ul>
                 <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-green hide-on-large-only light-green"><i class="mdi-navigation-menu"></i></a>
             </aside>
             <!-- END LEFT SIDEBAR NAV-->
 
-        <!-- //////////////////////////////////////////////////////////////////////////// -->
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+
       <!-- START CONTENT -->
       <section id="content">
 
         <!--breadcrumbs start-->
-        <div id="breadcrumbs-wrapper">
+        <div id="breadcrumbs-wrapper" class=" grey lighten-3">
             <!-- Search for small screen -->
             <div class="header-search-wrapper grey hide-on-large-only">
                 <i class="mdi-action-search active"></i>
-                <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+                <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Search">
             </div>
           <div class="container">
             <div class="row">
               <div class="col s12 m12 l12">
-                <h5 class="breadcrumbs-title">Upload Certificate</h5>
+                <h1 class="breadcrumbs-title">Upload Certificate</h1>
+                <ol class="breadcrumbs">
               </div>
             </div>
           </div>
@@ -186,18 +206,133 @@
 
         <!--start container-->
         <div class="container">
-          <div class="divider"></div>
-          <!--file-upload-->
-          <div id="file-upload" class="section">
-
-            <!--Max file size-->
-            <div class="row section">
+          <!--
+              jQuery Validation Plugin
+          -->
+          <!--jqueryvalidation-->
+          <div id="jqueryvalidation" class="section">
+            <div class="row">
               <div class="col s12 m12 l12">
-                  <p>Maximum file upload size 2MB.</p>
-                  <input type="file" id="input-file-max-fs" class="dropify-event" data-max-file-size="2M" data-default-file="" data-height="" data-disable-remove="true" />
-              </div>
-            </div>            
+                <div class="col s12 m12 l12">
+                    <div class="row">
+                        <ul id="task-card" class="collection with-header rbi-mss-login_widget card">
+                            <li class="collection-header mlb-blue-bg">
+                                <h4 class="task-card-title">Step 1: Upload your Certificate</h4>
+                            </li>
+                            <li>
+                                <!--file-upload-->
+                                <div id="file-upload" class="section">
+                                    <!--Max file size-->
+                                    <div class="row section">
+                                    <div class="col s12 m12 l12">
+                                        <p>Maximum file upload size 2MB.</p>
+                                        <input type="file" id="input-file-max-fs" class="dropify-event" data-max-file-size="2M" data-default-file="" data-height="" data-disable-remove="true" />
+                                    </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul id="task-card" class="collection with-header rbi-mss-login_widget card">
+                            <li class="collection-header mlb-blue-bg">
+                                <h4 class="task-card-title">Step 2: Select a Company</h4>
+                            </li>
+                            <li>
+                                <form class="formValidate" id="formValidate" method="get" action="">
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <select>
+                                                <option value="" disabled selected>Choose Company</option>
+                                                <option value="1">Company 1</option>
+                                                <option value="2">Company 2</option>
+                                                <option value="3">Company 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <button class="btn waves-effect waves-light right submit" type="submit" name="action">Add New Company
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul id="task-card" class="collection with-header rbi-mss-login_widget card">
+                            <li class="collection-header mlb-blue-bg">
+                                <h4 class="task-card-title">Step 3: Select an Agent</h4>
+                            </li>
+                            <li>
+                                <form class="formValidate" id="formValidate" method="get" action="">
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <select>
+                                                <option value="" disabled selected>Choose Agent</option>
+                                                <option value="1">Agent 1</option>
+                                                <option value="2">Agent 2</option>
+                                                <option value="3">Agent 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <button class="btn waves-effect waves-light right submit" type="submit" name="action">Request New Agent
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul id="task-card" class="collection with-header rbi-mss-login_widget card">
+                            <li class="collection-header mlb-blue-bg">
+                                <h4 class="task-card-title">Step 4: Enter Coverage Information</h4>
+                            </li>
+                            <li>
+                                <form class="formValidate" id="formValidate" method="get" action="">
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <select>
+                                                <option value="" disabled selected>Choose Coverage</option>
+                                                <option value="1">Coverage 1</option>
+                                                <option value="2">Coverage 2</option>
+                                                <option value="3">COverage 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <button class="btn waves-effect waves-light right submit" type="submit" name="action">Add Another Type of Coverage
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col s12">
+                            <p><b>Note:</b></p>
+                            <p>Please verify that the above information is correct. Once the upload button is clicked, the file will be uploaded and notified. If the coverage values are too low, you may adjust the values to reflect the needed coverage limits. If such a change is made, the requestor will be notified.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row center">
+                            <div class="input-field col s6">
+                                <button class="btn waves-effect waves-light center submit" type="submit" name="action">Submit
+                                </button>
+                            </div>
+                            <div class="input-field col s6">
+                                <button class="btn waves-effect waves-light center submit" type="submit" name="action">Reset
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </div>
           </div>
+
+
+          </div>
+
         </div>
         <!--end container-->
 
@@ -205,7 +340,6 @@
       <!-- END CONTENT -->
 
       <!-- //////////////////////////////////////////////////////////////////////////// -->
-
     </div>
     <!-- END WRAPPER -->
 
@@ -216,24 +350,22 @@
 
   <!-- //////////////////////////////////////////////////////////////////////////// -->
 
-  <!-- START FOOTER
-  <footer class="page-footer">
-    <div class="footer-copyright">
-      <div class="container">
-        <span>Copyright © 2015 <a class="grey-text text-lighten-4" href="" target="_blank">GreenLight</a> All rights reserved.</span>
+    <!-- START FOOTER
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2016 <a class="grey-text text-lighten-4" href="" target="_blank">GreenLight</a> All rights reserved.
+            </div>
         </div>
-    </div>
-  </footer>
- END FOOTER -->
-
-
+    </footer>
+     END FOOTER -->
 
     <!-- ================================================
     Scripts
     ================================================ -->
-    
+
     <!-- jQuery Library -->
-    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>    
+    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
     <!--angularjs-->
     <script type="text/javascript" src="js/plugins/angular.min.js"></script>
     <!--materialize js-->
@@ -243,42 +375,69 @@
     <!--scrollbar-->
     <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <!-- chartist -->
-    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
-    <!-- dropify -->
-    <script type="text/javascript" src="js/plugins/dropify/js/dropify.min.js"></script>
+    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>
+
+    <!-- chartist -->
+    <script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery-validation/additional-methods.min.js"></script>
+
     <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="js/plugins.js"></script>
     <!--custom-script.js - Add your own theme custom JS-->
     <script type="text/javascript" src="js/custom-script.js"></script>
-    
+
     <script type="text/javascript">
-        $(document).ready(function(){
-            // Basic
-            $('.dropify').dropify();
-
-            // Translated
-            $('.dropify-fr').dropify({
-                messages: {
-                    default: 'Glissez-déposez un fichier ici ou cliquez',
-                    replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
-                    remove:  'Supprimer',
-                    error:   'Désolé, le fichier trop volumineux'
-                }
-            });
-
-            // Used events
-            var drEvent = $('.dropify-event').dropify();
-
-            drEvent.on('dropify.beforeClear', function(event, element){
-                return confirm("Do you really want to delete \"" + element.filename + "\" ?");
-            });
-
-            drEvent.on('dropify.afterClear', function(event, element){
-                alert('File deleted');
-            });
-        });
+    $("#formValidate").validate({
+        rules: {
+            uname: {
+                required: true,
+                minlength: 5
+            },
+            cemail: {
+                required: true,
+                email:true
+            },
+            password: {
+				required: true,
+				minlength: 5
+			},
+			cpassword: {
+				required: true,
+				minlength: 5,
+				equalTo: "#password"
+			},
+			curl: {
+                required: true,
+                url:true
+            },
+            crole:"required",
+            ccomment: {
+				required: true,
+				minlength: 15
+            },
+            cgender:"required",
+			cagree:"required",
+        },
+        //For custom messages
+        messages: {
+            uname:{
+                required: "Enter a username",
+                minlength: "Enter at least 5 characters"
+            },
+            curl: "Enter your website",
+        },
+        errorElement : 'div',
+        errorPlacement: function(error, element) {
+          var placement = $(element).data('error');
+          if (placement) {
+            $(placement).append(error)
+          } else {
+            error.insertAfter(element);
+          }
+        }
+     });
     </script>
-    
+
 </body>
 
 </html>
