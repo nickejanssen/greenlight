@@ -195,7 +195,7 @@
           <div class="container">
             <div class="row">
               <div class="col s12 m12 l12">
-                <h5 class="breadcrumbs-title">Add Company</h5>
+                <h1 class="breadcrumbs-title">Audit</h1>
                 <ol class="breadcrumbs">
               </div>
             </div>
@@ -213,20 +213,22 @@
           <div id="jqueryvalidation" class="section">
             <div class="row">
               <div class="col s12 m12 l12">
-                  <div class="col s12 m12 l12">
-                        <div class="card-panel">
-                            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="row">
+                        <ul id="task-card" class="collection with-header rbi-mss-login_widget card">
+                            <li class="collection-header mlb-blue-bg">
+                                <h4 class="task-card-title">Specify Audit Details Below</h4>
+                            </li>
+                            <li>
                                 <form class="formValidate" id="formValidate" method="get" action="">
                                     <div class="row">
                                         <div class="input-field col s4">
-                                            <label for="curl">Audit Start Date</label>
-                                            <input id="curl" type="url" name="curl" data-error=".errorTxt5">
-                                            <div class="errorTxt5"></div>
+                                            <input type="date" class="datepicker">
+                                            <label for="dob">Audit Start Date</label>
                                         </div>
                                         <div class="input-field col s4">
-                                          <label for="cemail">Audit End Date</label>
-                                          <input id="cemail" type="email" name="cemail" data-error=".errorTxt2">
-                                          <div class="errorTxt2"></div>
+                                            <input type="date" class="datepicker">
+                                            <label for="dob">Audit End Date</label>
                                         </div>
                                         <div class="input-field col s4">
                                             <button class="btn waves-effect waves-light right submit" type="submit" name="action">Start
@@ -235,9 +237,48 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="row">
+                        <ul id="task-card" class="collection with-header rbi-mss-login_widget card">
+                            <li class="collection-header mlb-blue-bg">
+                                <h4 class="task-card-title">Previous Audit Files</h4>
+                            </li>
+                            <li>
+                                        <div class="card-content">
+                                        <table class="striped">
+                                            <thead>
+                                            <tr>
+                                                <th data-field="id">Name</th>
+                                                <th data-field="active">Date Range</th>
+                                                <th data-field="waiting">Date Audited</th>
+                                            </tr>
+                                            </thead>
+
+                                            <tbody>
+                                            <tr>
+                                                <td>Endurance Race Services</td>
+                                                <td>02/02/2016 - 02/19/2016</td>
+                                                <td>03/18/2016</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company 2</td>
+                                                <td>02/02/2016 - 02/19/2016</td>
+                                                <td>03/18/2016</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company 3</td>
+                                                <td>02/02/2016 - 02/19/2016</td>
+                                                <td>03/18/2016</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                    </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
           </div>
 
